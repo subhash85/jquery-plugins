@@ -35,8 +35,8 @@
 		}
 		
 		var result = {};
-		$.each(['transitionDuration', 'transitionProperty', 'transform', 'transformOrigin'], function() {
-			result[this] = findProp(this);
+		$.each(['transitionDuration', 'transitionProperty', 'transform', 'transformOrigin'], function(index, value) {
+			result[value] = findProp(value);
 		});
 		return result;
 		
